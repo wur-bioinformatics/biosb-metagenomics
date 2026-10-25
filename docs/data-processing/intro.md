@@ -3,13 +3,12 @@
 - In the practical you will go from raw reads to
 taxonomical characterization of metagenome
 assembled genomes
-- In this mock experiment we have a small diverse
+- In this mock experiment we have metagenomic reads of a small diverse
 synthetic rhizosphere community
-- We expose the plant to fungal chitin and we expect the
-plant to respond to this treatment by modulating the
-microbial community it associates with in the
-rhizosphere
-- Can you find out how the microbial community adapts?
+- As this module is on Quality Control, Metagenome assembly, and Binning, you should be able to find answers to the following questions:
+  - What FastQC measures are relevant in the quality control of metagenomic reads?
+  - Can you find back which species were used to build the community?
+  - To what extent are you able to build complete genomes from the data?
 
 ## Slides
 [:fontawesome-solid-file-pdf: Download the presentation (2022)](../assets/from_zero_to_hero.pdf){: .md-button }
