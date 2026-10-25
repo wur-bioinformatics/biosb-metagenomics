@@ -19,7 +19,6 @@ nav:
     - Quality Control: data-processing/quality-control.md
     - Assembly: data-processing/assembly.md
     - Binning: data-processing/binning.md
-    - Cave expedition: data-processing/cave-expedition.md
   - "Day 3: Functional annotation":
     - Viromics: functional-annotation/viromes.md
     - BGCs: functional-annotation/bgcs.md
