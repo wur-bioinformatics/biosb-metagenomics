@@ -58,7 +58,6 @@ This created the checkm_bac/ folder with the information on our bins, to interpr
     checkm qa checkm_taxon_bacteria checkm_bac/
 
 !!! question Exercise
-
     What does it mean? How can we interpret this?
 
 Now, we will let checkm predict the taxonomy of the bins and evaluate their completeness.
