@@ -11,6 +11,5 @@ synthetic rhizosphere community
   - To what extent are you able to build complete genomes from the data?
 
 ## Slides
-[:fontawesome-solid-file-pdf: Download the presentation (2022)](../assets/from_zero_to_hero.pdf){: .md-button }
-[:fontawesome-solid-file-pdf: Download the presentation (2024)](../assets/mgx_order_to_chaos.pdf){: .md-button }
+[:fontawesome-solid-file-pdf: Download the presentation (2026)](../assets/BioSB_QC_Assembly_Binning_2026.pptx){: .md-button }
 
