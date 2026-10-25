@@ -3,12 +3,12 @@
 
 Next, we want to map the reads back on the assembly to see how the coverage for each contig changed across samples:
 
-    bwa mem precomputed/assembly/final.contigs.fa \
+    bwa mem /data/precomputed/assembly/final.contigs.fa \
             reads/sample_0.fq.gz \
             -o bam/sample_0.bam \
             -t 32
 
-Here, we won’t run it for all samples to save time and space, you will find the bam files in the precomputed/bam/ folder. 
+Here, we won’t run it for all samples to save time and space, you will find the bam files in the /data/precomputed/bam/ folder. 
 
 !!! question Exercise
 
@@ -16,7 +16,7 @@ Here, we won’t run it for all samples to save time and space, you will find th
 
 Now, many tools need bam files to be sorted in order to work. Therefore, we will use samtools sort to do that.
 
-    samtools sort precomputed/bam/sample_0.bam -o bam/sample_0.sorted.bam
+    samtools sort /data/precomputed/bam/sample_0.bam -o bam/sample_0.sorted.bam
 
 The sorted bam files can also be index, so other tools can quickly extract alignments
 
@@ -43,7 +43,7 @@ Now, we will create a depth table, which can be used by binning tools to identif
 
 Now, we can run metabat to find our bins:
 
-    metabat2 -a depth.tsv -i precomputed/assembly/final.contigs.fa.gz -o binned_genomes/bin
+    metabat2 -a depth.tsv -i /data/precomputed/assembly/final.contigs.fa.gz -o binned_genomes/bin
 
 After this is done, we will now try and figure out how good are our bins, we will use checkm. First we create a set of lineage specific markers for bacterial genomes:
 
@@ -51,11 +51,11 @@ After this is done, we will now try and figure out how good are our bins, we wil
 
 Now, it’s time to find out the completeness of your binned genomes:
 
-    checkm analyze -x fa checkm_taxon binned_genomes/ checkm_bac/
+    checkm analyze -x fa checkm_taxon_bacteria binned_genomes/ checkm_bac/
 
 This created the checkm_bac/ folder with the information on our bins, to interpret the results we use checkm qa:
 
-    checkm qa checkm_taxon checkm_bac/
+    checkm qa checkm_taxon_bacteria checkm_bac/
 
 !!! question Exercise
 
@@ -69,4 +69,4 @@ This command will take some time but it will give us a detailed breakdown of eac
 
 With the bam files, a coverage file can also be created with the tool [CoverM](https://github.com/wwood/CoverM)
 
-    coverm contig -b data/precomputed/bam/sample_*.sorted.bam -m mean -t 16 -o coverage.tsv
+    coverm contig -b /data/precomputed/bam/sample_*.sorted.bam -m mean -t 16 -o coverage.tsv
