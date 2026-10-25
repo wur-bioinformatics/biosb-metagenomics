@@ -28,7 +28,7 @@ We can first get an idea if the different genomes can be seperated by gc-content
     tar zxvf taxdump.tar.gz
     blobtools nodesdb --nodes db/nodes.dmp --names db/names.dmp
 
-    blobtools create -i data/precomputed/assembly/final.contigs.fa -b data/precomputed/bam/sample_0.sorted.bam -b data/precomputed/bam/sample_1.sorted.bam -b data/precomputed/bam/sample_2.sorted.bam -b data/precomputed/bam/sample_3.sorted.bam -b data/precomputed/bam/sample_4.sorted.bam -b data/precomputed/bam/sample_5.sorted.bam
+    blobtools create -i /data/precomputed/assembly/final.contigs.fa -b /data/precomputed/bam/sample_0.sorted.bam -b /data/precomputed/bam/sample_1.sorted.bam -b /data/precomputed/bam/sample_2.sorted.bam -b /data/precomputed/bam/sample_3.sorted.bam -b /data/precomputed/bam/sample_4.sorted.bam -b /data/precomputed/bam/sample_5.sorted.bam
 
     blobtools view -i blobDB.json
     blobtools plot -i blobDB.json
