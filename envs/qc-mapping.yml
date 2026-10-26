@@ -13,3 +13,5 @@ dependencies:
   - samtools
   - seqkit=2.14.0
   - seqtk
+  - sourmash
+  - kraken2
