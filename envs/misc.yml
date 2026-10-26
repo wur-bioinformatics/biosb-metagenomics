@@ -1,0 +1,9 @@
+name: misc
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - blobtools
+  - clusterone
+  - mcl
+  - vsearch

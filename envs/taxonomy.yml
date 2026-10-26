@@ -1,0 +1,11 @@
+name: taxonomy
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - gtdbtk
+  - kraken2
+  - kaiju
+  - cat
+  - sourmash
+  - mmseqs2

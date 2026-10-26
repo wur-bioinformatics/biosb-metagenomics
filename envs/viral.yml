@@ -1,0 +1,12 @@
+name: viral
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # Without these two pins, phold's PyTorch dependency makes the solver use >6 GB RAM
+  - python=3.11
+  - pytorch=*=cpu*
+  - genomad=1.11.2
+  - checkv=1.1.1
+  - pharokka=1.10.1
+  - phold=1.3.0

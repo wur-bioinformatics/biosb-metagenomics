@@ -1,0 +1,13 @@
+name: assembly-binning
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - megahit
+  - spades
+  - quast
+  - metabat2
+  - maxbin2
+  - das_tool
+  - coverm
+  - checkm-genome

@@ -1,0 +1,13 @@
+name: annotation
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # Python pin cuts the solve from ~7 min to ~30 s
+  - python=3.11
+  - prokka
+  - eggnog-mapper
+  - diamond
+  - hmmer
+  - blast
+  - prodigal

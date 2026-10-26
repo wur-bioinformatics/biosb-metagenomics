@@ -1,0 +1,20 @@
+name: jupyter
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - jupyterhub
+  - jupyterlab
+  - ipython
+  - ipykernel
+  - numpy
+  - pandas
+  - scipy
+  - r-base
+  - r-tidyverse
+  - r-vegan
+  - r-mediation
+  - r-ape
+  - r-irkernel
+  - bioconductor-microbiome

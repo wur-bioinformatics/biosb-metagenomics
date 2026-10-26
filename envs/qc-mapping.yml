@@ -1,0 +1,15 @@
+name: qc-mapping
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - fastp
+  - fastqc
+  - multiqc
+  - bbmap
+  - bowtie2
+  - bwa
+  - bwa-mem2
+  - samtools
+  - seqkit=2.14.0
+  - seqtk
