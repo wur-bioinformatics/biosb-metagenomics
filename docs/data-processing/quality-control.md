@@ -61,7 +61,7 @@ This search does not retun any hits. But often the end of the sequences contain 
 Let's check the quality of the data with FastQC before quality filtering:
 
     mkdir fastqc_untrimmed_reads
-    fastqc --threads 8 /data/reads/sample_0.fq.gz -o fastqc_untrimmed_reads/
+    fastqc --threads 8 /data/reads/sample_0.fq.gz --outdir fastqc_untrimmed_reads/
 
 !!! question Exercise
     Open the FastqQC report `fastqc_untrimmed_reads//sample_0_fastqc.html`
