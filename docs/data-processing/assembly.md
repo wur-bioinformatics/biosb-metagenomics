@@ -2,7 +2,7 @@
     - Being able to create an assembly with megahit
     - Assess the quality of the assembly
 
-Now that our reads are quality trimmed and ready to go, it is time to start the assembly. We can use [megahit](https://github.com/voutcn/megahit) for this. However, this command would take around 50 minutes to complete and require a lot of compute. For that reason, we specify the command here below and please DO NOT run it! Instead you can use the pre-assembled data in the /data/precomputed/assembly/ folder for the next step. Megahit command:
+Now that our reads are quality trimmed and ready to go, it is time to start the assembly. We can use [megahit](https://github.com/voutcn/megahit) for this. However, this command would take around 50 minutes to complete and requires a lot of compute. For that reason, we specify the command here below and please DO NOT run it! Instead you can use the pre-assembled data in the /data/precomputed/assembly/ folder for the next step. Megahit command:
 
     megahit --12 sample_0.nophix.fastq.gz,sample_1.nophix.fastq.gz,sample_2.nophix.fastq.gz,sample_3.nophix.fastq.gz,sample_4.nophix.fastq.gz,sample_5.nophix.fastq.gz \
             -t 16 \
