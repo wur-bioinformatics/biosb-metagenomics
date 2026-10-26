@@ -14,6 +14,7 @@ We will now identify viral sequences from metagenomic data. You will use the ass
 > - **Phold**
 
 All these tools and the necessary databases have been preinstalled and are ready for you to use.
+You can activate the environment with ``conda activate viral``.
 
 ## Step 1 - Virus discovery
 
@@ -30,7 +31,7 @@ genomad end-to-end \
     --enable-score-calibration \
     --disable-find-proviruses \
     --cleanup \
-    -- threads 4 \
+    --threads 4 \
     final.contigs.fa \
     genomad \
     /data/databases/genomad_db/
@@ -103,22 +104,22 @@ We run it in ``fast`` mode which does not run MMseqs2 and is thus faster, you ca
 
 ```bash
 pharokka run \
-    -i checkv/k141_524.fna 
-    -t 4 
-    --fast 
-    -o pharokka_524 
-    -d data/databases/pharokka
+    -i checkv/k141_524.fna \
+    -t 4 \
+    --fast \
+    -o pharokka_524 \
+    -d /data/databases/pharokka
 ```
 
 **Note:** You can also run pharokka for a collection of virus contigs from a metagenome, using ``-m``, but this takes too long for the course:
 
 ```bash
 pharokka run \
-    -i checkv/combined.fna 
-    -t 4 
-    -m
-    -o pharokka
-    -d data/databases/pharokka
+    -i checkv/combined.fna \
+    -t 4 \
+    -m \
+    -o pharokka \
+    -d /data/databases/pharokka
 ```
 
 The Pharokka output is described [here](https://pharokka.readthedocs.io/en/latest/output/).
@@ -141,11 +142,11 @@ Next, we try to improve the functional annotation using Phold.
 You can also continue with the results in ``/data/precomputed/virome/phold_524/``.
 
 ```bash
-phold run 
-    -i pharokka_524/pharokka.gbk 
-    -o phold_524 
-    -t 4 
-    -d data/databases/phold 
+phold run \
+    -i pharokka_524/pharokka.gbk \
+    -o phold_524 \
+    -t 4 \
+    -d /data/databases/phold 
 ```
 
 The output of Phold is described [here](https://github.com/gbouras13/phold#output).
