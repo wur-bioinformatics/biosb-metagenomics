@@ -84,7 +84,7 @@ Because NovaSeq and NextSeq from Illumina contain often poly-g tails, it is good
 Now make a FastQC report again, to see the results of the quality filtering.
 
     mkdir fastqc_trimmed_reads
-    fastqc --threads 8 sample_0.trim.fastq -o fastqc_trimmed_reads/
+    fastqc --threads 8 sample_0.trim.fastq --outdir fastqc_trimmed_reads/
 
 !!! question "Exercise" 
     - Are there any adapter sequences detected?
