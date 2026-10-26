@@ -31,6 +31,18 @@ Examples:
 _In theory this makes it easy to find out another person’s credentials, we trust
 the participants to not take advantage of this._
 
+### Installing tools
+
+The tools/software for specific parts can be loaded/installed using conda.
+For every part of the practical, a set of tools is available on a conda package.
+You can find the list of conda packages by typing: 
+
+conda env list
+
+Then, you can select the right package for your part of the practical and activate it using e.g.: 
+
+conda activate qc-mapping
+
 ### Basic jupyterhub environment
 
 After logging in, an individual session will be started and you will get
