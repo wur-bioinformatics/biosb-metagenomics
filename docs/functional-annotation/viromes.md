@@ -131,14 +131,20 @@ You get the annotation in standard formats such as ``gff`` or ``gbk``.
 ??? done "2. How many of the protein-coding genes have a functional prediction and for how many is the function unknown? How many have a PHROG assigned?"
     17 genes with a prediction and 62 with unknown function. 25 CDSs have a PHROG number.
 
-You can download the ``gbk`` file to your computer and use it to visualize the contig using https://gbouras13.github.io/phold-plot-wasm-app/    
+You can also visualize the ``gbk`` using ``phold plot``:
+
+```bash
+phold plot \
+    -i pharokka_524/pharokka.gbk \
+    -o pharokka_plot
+```
 
 ??? done "3. Can you confirm the number of genes with a functional annotation from the previous question?"
     Yes, we see 17 genes with an annotation.
 
 Next, we try to improve the functional annotation using Phold.
 
-**Note:** The following command takes about 7 minutes. 
+**Note:** The following command takes 2-3 minutes. 
 You can also continue with the results in ``/data/precomputed/virome/phold_524/``.
 
 ```bash
@@ -155,7 +161,13 @@ You can also access the annotation in standard ``gbk`` format or as a tablular f
 ??? done "4. Using Phold, how many genes have a PHROG assigned? How many have a functional prediction?"
     35 CDSs have a PHROG number, 30 genes have an annotation. We see that the annotation improved substantially for this contig.
 
-You can also download the Phold ``gbk`` file to your computer and use it to visualize the contig using https://gbouras13.github.io/phold-plot-wasm-app/    
+Next, also visualize the phold ``gbk`` and compare the image to the one from pharokka:
+
+```bash
+phold plot \
+    -i phold_524/phold.gbk \
+    -o phold_plot
+```
 
 Finally, there is also an annotation inferred by genomad, you can find it in ``genomad/final.contigs_summary/final.contigs_virus_genes.tsv``
 
