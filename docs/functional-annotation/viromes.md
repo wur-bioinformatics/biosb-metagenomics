@@ -67,7 +67,7 @@ checkv \
     genomad/final.contigs_summary/final.contigs_virus.fna \
     checkv \
     -t 4 \
-    -d /data/databases/checkv-db-v1.5
+    -d /data/databases/checkv-db-v1.4
 ```
 
 The CheckV output is described [here](https://bitbucket.org/berkeleylab/checkv/src/master/#markdown-header-output-files). Look into ``checkv/quality_summary.tsv``.
